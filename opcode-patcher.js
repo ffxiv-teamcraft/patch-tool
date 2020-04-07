@@ -81,7 +81,6 @@ messages.split('\n').forEach(message => {
     const opcodeName = message.split(' = ')[0].replace(/\s+/, '');
     const opcodeValue = message.split(' = ')[1].replace(/\r?\n/, '');
     const previousOpcodeLine = inputClass.split('\n').find(line => line.indexOf(`${opcodeName} = `) > -1);
-    console.log(opcodeValue);
     inputClass = inputClass.replace(previousOpcodeLine, `    ${opcodeName} = ${opcodeValue}`);
     fs.writeFileSync(inputFilePath, inputClass);
 });
