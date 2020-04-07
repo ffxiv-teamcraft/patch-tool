@@ -19,7 +19,7 @@ const messages = 'Ping = 0x017A, // updated 5.25\n' +
     '    StatusEffectList = 0x01D7, // updated 5.25\n' +
     '    Effect = 0x0087, // updated 5.25\n' +
     '    AoeEffect8 = 0x01A6, // updated 5.25\n' +
-    '    PersistantEffect = 0x032E, // updated 5.25' +
+    '    PersistantEffect = 0x032E, // updated 5.25\n' +
     '    PlayerSpawn = 0x00B9, // updated 5.25\n' +
     '    NpcSpawn = 0x038D, // updated 5.25\n' +
     '    ActorSetPos = 0x028E, // updated 5.25\n' +
@@ -75,12 +75,13 @@ const messages = 'Ping = 0x017A, // updated 5.25\n' +
 
 const inputFilePath = 'F:\\WebstormProjects\\MachinaWrapperJSON\\MachinaWrapper\\src\\Models\\Sapphire\\Ipcs.cs';
 
-const inputClass = fs.readFileSync(inputFilePath, 'utf-8');
+let inputClass = fs.readFileSync(inputFilePath, 'utf-8');
 
 messages.split('\n').forEach(message => {
     const opcodeName = message.split(' = ')[0].replace(/\s+/, '');
-    const opcodeValue = message.split(' = ')[1]
+    const opcodeValue = message.split(' = ')[1].replace(/\r?\n/, '');
     const previousOpcodeLine = inputClass.split('\n').find(line => line.indexOf(`${opcodeName} = `) > -1);
-    inputClass.replace(previousOpcodeLine, `    ${opcodeName} = ${opcodeValue}`);
+    console.log(opcodeValue);
+    inputClass = inputClass.replace(previousOpcodeLine, `    ${opcodeName} = ${opcodeValue}`);
     fs.writeFileSync(inputFilePath, inputClass);
 });
