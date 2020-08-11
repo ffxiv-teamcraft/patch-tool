@@ -26,8 +26,8 @@ const walkSync = function (dir, filelist) {
 
 
 // TODO make this a parameter
-const previous = 'F:\\WebstormProjects\\xivapi.com\\data\\ffxiv-datamining-patches\\extracts\\5.21';
-const update = 'F:\\WebstormProjects\\xivapi.com\\data\\ffxiv-datamining-patches\\extracts\\5.25';
+const previous = 'F:\\WebstormProjects\\xivapi.com\\data\\SaintCoinach.Cmd\\2020.03.27.0000.0000\\raw-exd-all';
+const update = 'C:\\Users\\Miu\\Desktop\\SaintCoinach.Cmd-master-b820-cb6a0a3\\2020.08.01.0000.0000\\raw-exd-all';
 
 const deletedSheets = [];
 const modifiedSheets = [];
@@ -50,10 +50,11 @@ previousSheets.forEach(fileName => {
     });
     if (newSheet === undefined) {
         deletedSheets.push();
-    }
-    const newHeaders = getFirstRow(newSheet);
-    if (newHeaders.length !== previousHeaders.length) {
-        modifiedSheets.push(sheetName);
+    } else {
+        const newHeaders = getFirstRow(newSheet);
+        if (newHeaders.length !== previousHeaders.length) {
+            modifiedSheets.push(sheetName);
+        }
     }
     progress.increment();
 });
