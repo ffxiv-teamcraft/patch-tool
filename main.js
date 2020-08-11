@@ -50,7 +50,7 @@ previousSheets.forEach(fileName => {
         return sheet.replace(update, '') === sheetName;
     });
     if (newSheet === undefined) {
-        deletedSheets.push();
+        deletedSheets.push(sheetName);
     } else {
         const newHeaders = getFirstRow(newSheet);
         if (newHeaders.length !== previousHeaders.length) {
