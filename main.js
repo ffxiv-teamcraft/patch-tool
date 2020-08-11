@@ -1,6 +1,7 @@
 const fs = require('fs');
 const path = require('path');
 const cliProgress = require('cli-progress');
+const _ = require('lodash');
 
 const progress = new cliProgress.SingleBar({
     format: ' {bar} | {value}/{total}',
@@ -60,20 +61,20 @@ previousSheets.forEach(fileName => {
 });
 
 
-console.log('===== DELETED SHEETS =====');
+console.log('### DELETED SHEETS');
 console.log('Total : ' + deletedSheets.length);
-deletedSheets.forEach(sheet => {
+_.uniq(deletedSheets.map(name => name.replace(/\.\w{2}\.csv/, ''))).forEach(sheet => {
     console.log(` - ${sheet}`);
 });
 
-console.log('===== MODIFIED SHEETS =====');
+console.log('### MODIFIED SHEETS');
 console.log('Total : ' + modifiedSheets.length);
-modifiedSheets.forEach(sheet => {
+_.uniq(modifiedSheets.map(name => name.replace(/\.\w{2}\.csv/, ''))).forEach(sheet => {
     console.log(` - ${sheet}`);
 });
 
-console.log('===== NEW SHEETS =====');
-const addedSheets = newSheets.filter(sheet => {
+console.log('### NEW SHEETS');
+const addedSheets = _.uniq(newSheets.map(name => name.replace(/\.\w{2}\.csv/, ''))).filter(sheet => {
     const newName = sheet.replace(update, '');
     return !previousSheets.some(prev => {
         return prev.indexOf(newName) > -1;
