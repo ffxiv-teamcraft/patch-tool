@@ -31,8 +31,8 @@ function ignoreSheet(sheetName) {
 
 
 // TODO make this a parameter
-const previous = 'F:\\WebstormProjects\\xivapi.com\\data\\ffxiv-datamining-patches\\extracts\\5.2';
-const update = 'F:\\WebstormProjects\\xivapi.com\\data\\ffxiv-datamining-patches\\extracts\\5.3';
+const previous = 'F:\\WebstormProjects\\xivapi.com\\data\\ffxiv-datamining-patches\\extracts\\5.35';
+const update = 'F:\\WebstormProjects\\xivapi.com\\data\\ffxiv-datamining-patches\\extracts\\5.4';
 
 const deletedSheets = [];
 const modifiedSheets = [];
