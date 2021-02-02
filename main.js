@@ -27,8 +27,8 @@ const walkSync = function (dir, filelist) {
 
 
 // TODO make this a parameter
-const previous = 'F:\\WebstormProjects\\xivapi.com\\data\\SaintCoinach.Cmd\\2020.03.27.0000.0000\\raw-exd-all';
-const update = 'C:\\Users\\Miu\\Desktop\\SaintCoinach.Cmd-master-b820-cb6a0a3\\2020.08.01.0000.0000\\raw-exd-all';
+const previous = 'G:\\WebstormProjects\\xivapi.com\\data\\SaintCoinach.Cmd\\2021.01.28.0000.0000\\raw-exd-all';
+const update = 'G:\\WebstormProjects\\xivapi.com\\data\\SaintCoinach.Cmd\\2020.12.29.0000.0000\\raw-exd-all';
 
 const deletedSheets = [];
 const modifiedSheets = [];
