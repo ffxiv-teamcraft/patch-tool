@@ -1,6 +1,6 @@
 try {
     const fileName = `${process.argv[2]}.json`;
-    const file = require(`./input/definitions/${fileName}`);
+    const file = require(`../input/definitions/${fileName}`);
     const fs = require('fs');
 
     file.definitions = file.definitions.map(def => {

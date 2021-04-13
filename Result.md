@@ -1,15 +1,123 @@
 ### DELETED SHEETS
-Total : 0
+Total : 4
+ - \CustomTalkDynamicIcon.csv
+ - \MasterpieceSupplyDuty.csv
+ - \MasterpieceSupplyMultiplier.csv
+ - \Purify.csv
 ### MODIFIED SHEETS
-Total : 12
- - \custom\007\RegOth4MycRostik_00708
- - \quest\039\JobAoz602_03989
- - \quest\039\JobAoz630_03990
- - \quest\039\JobAoz650_03991
- - \quest\039\JobAoz701_03994
- - \quest\040\LucKsa201_04025
- - \quest\040\LucKsa212_04028
- - \quest\040\LucKsa213_04029
- - \quest\040\LucKsa250_04037
- - \quest\040\LucKsa252_04039
+ - \Achievement.csv
+    - Inserted #21: int32
+    - Inserted #22: int32
+    - Inserted #23: uint16
+    - Inserted #24: byte
+    - Inserted #25: byte
+ - \ActionComboRoute.csv
+    - Inserted #7: uint16
+    - Inserted #8: uint16
+    - Inserted #9: bit&01
+ - \ActionIndirection.csv
+    - Inserted #2: int32
+ - \ChocoboTaxi.csv
+    - Inserted #3: uint16
+    - Inserted #4: bit&01
+ - \ClassJobCategory.csv
+    - Inserted #40: bool
+    - Inserted #41: bool
+ - \ContentFinderCondition.csv
+    - Inserted #45: sbyte
+    - Inserted #84: bool
+ - \ContentTourismConstruct.csv
+    - Inserted #8: uint32
+    - Inserted #9: uint32
+    - Inserted #10: uint32
+ - \CreditBackImage.csv
+    - Inserted #5: uint32
+    - Inserted #6: byte
+ - \Cutscene.csv
+    - Inserted #8: uint16
+ - \cut_scene\055\VoiceMan_05500
+ - \cut_scene\055\VoiceMan_05500
+ - \cut_scene\055\VoiceMan_05500
+ - \DescriptionPage.csv
+    - Inserted #24: uint32
+    - Inserted #25: uint16
+ - \DynamicEvent.csv
+    - Inserted #12: int16
+    - Inserted #13: int16
+    - Inserted #14: int16
+ - \Emote.csv
+    - Inserted #23: uint16
+ - \Fate.csv
+    - Removed #19: uint32
+    - Inserted #20: uint32
+    - Removed #29: uint16
+    - Inserted #48: uint16
+    - Inserted #49: uint16
+    - Inserted #50: uint16
+ - \GroupPoseCharacterShowPreset.csv
+    - Inserted #13: bit&20
+ - \Item.csv
+    - Removed #41: byte
+    - Removed #48: int64
+    - Removed #52: uint16
+    - Removed #55: byte
+    - Inserted #55: uint16
+    - Removed #86: byte
+    - Removed #88: bit&01
+    - Removed #89: bit&02
+    - Removed #90: byte
+    - Removed #91: bit&04
+ - \JournalCategory.csv
+    - Inserted #4: byte
+ - \MapCondition.csv
+    - Inserted #1: int32
+    - Inserted #2: byte
+ - \ModelChara.csv
+    - Inserted #17: byte
+    - Inserted #18: single
+ - \Mount.csv
+    - Inserted #45: bit&80
+ - \MYCWarResultNotebook.csv
+    - Inserted #7: byte
+    - Inserted #10: str
+ - \OrchestrionCategory.csv
+    - Inserted #4: bit&01
+ - \Perform.csv
+    - Inserted #12: byte
+ - \PlaceName.csv
+    - Inserted #10: byte
+ - \PreHandler.csv
+    - Inserted #7: byte
+ - \PublicContent.csv
+    - Removed #7: uint32
+    - Inserted #13: uint16
+    - Inserted #16: uint32
+ - \ResistanceWeaponAdjust.csv
+    - Inserted #7: byte
+ - \ScenarioTree.csv
+    - Inserted #6: uint32
+ - \Transformation.csv
+    - Inserted #36: byte
+    - Inserted #37: bit&80
+    - Inserted #38: bit&01
+ - \WeaponTimeline.csv
+    - Inserted #2: bit&01
 ### NEW SHEETS
+Total : 17
+ - \AchievementTarget.csv
+ - \AdvancedVibration.csv
+ - \CutSceneIncompQuest.csv
+ - \cut_scene\060\VoiceMan_06000
+ - \EventCustomIconType.csv
+ - \EventSituationIconTooltip.csv
+ - \ExportedGatheringPoint.csv
+ - \GroupPoseStampFontColor.csv
+ - \PerformGroup.csv
+ - \QuestCustomTodo.csv
+ - \QuestRecomplete.csv
+ - \SequentialEventMultipleRange.csv
+ - \TriggerEffect.csv
+ - \UDS_Event.csv
+ - \UDS_Object.csv
+ - \UDS_Property.csv
+ - \UDS_Stats.csv

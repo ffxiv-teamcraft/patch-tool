@@ -5,7 +5,7 @@ const path = require('path');
 const diff = require('./diff.json');
 let ipcs = fs.readFileSync(path.join(__dirname, 'Ipcs.cs'), "utf8");
 
-const version = '5.45';
+const version = '5.45 hotfix';
 
 diff.forEach(entry => {
     entry.old.forEach((old, index) => {
